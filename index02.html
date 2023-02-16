@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style02.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>CV</title>
+</head>
+<body>
+
+    <div class="caja01">
+        <img id="fotodeperfil" src="./imagen/Mesa de trabajo 1.png" alt="Foto de perfil" />
+        <h3>FACUNDO FARIAS</h3>
+        <p class="content-creator">CONTENT CREATOR</p>    
+    </div>
+
+    <div class="caja01">
+        <button id="mostrar" type="button" onclick='mostrar()' class="btn btn-outline-light">Personal Information</button>
+        <div id="ocultar">
+            <p>
+                <li>26 años<br></li>
+                <li>01/08/1996<br></li>
+                <li>Jujuy - Argentina<br></li>
+            </p>
+        </div>    
+    </div>
+    
+
+    <div class="caja01">
+        <button id="mostrar1" type="button" onclick='mostrar1()' class="btn btn-outline-light">About me</button>
+        <div id="ocultar1">
+            <p>Soy una persona creativa, aprecio mucho la naturaleza, me gusta grabar y sacar fotos. Con el tiempo me di cuenta que desde chico la tecnologia era mi mayor fuerte siempre con mis propios medios resolvia cada problema que se me presentaba en cuanto a lo tecnologico.</p>
+        </div>
+    </div>
+
+    <div class="caja01">
+        <button id="mostrar2" type="button" onclick='mostrar2()' class="btn btn-outline-light">Experience</button> 
+        <div id="ocultar2">
+            <p>Mi experiencia actoral</p>
+                
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0xKPvxS2540" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Qb9Vp-pJETM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0D8IZdIKIXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+        </div>
+    </div>
+        
+    <div class="caja01">
+        <button id="mostrar2" type="button" onclick='mostrar3()' class="btn btn-outline-light">Contact</button> 
+        <div id="ocultar3">
+            <p>facundof20@hotmail.com</p>
+        </div>
+    </div>
+    
+    
+    <div class="redes">
+        <a href="https://www.instagram.com/facundo.farias/"><img class="ig" src="./imagen/instagram.png" alt="instragram.png"></a>
+        <a href="https://www.tiktok.com/@facundofarias"><img class="ig" src="./imagen/tiktok.png" alt="tiktok.png"></a>
+        <a href="https://www.facebook.com/FacuuFarias.1/"><img class="ig" src="./imagen/facebook.png" alt="facebook.png"></a>
+        <a href="https://www.youtube.com/channel/UCcGra-aHgL29L1L1AL4EYRQ"><img class="ig" src="./imagen/youtube.png" alt="youtube.png"></a>
+    </div>
+        
+       
+  
+
+    
+
+    <script>
+
+        function mostrar() {
+            if (document.getElementById('ocultar').style.display === 'none') {
+                document.getElementById('ocultar').style.display = 'block';
+            } else document.getElementById('ocultar').style.display = 'none';      
+        }
+
+        function mostrar1() {
+            if (document.getElementById('ocultar1').style.display === 'none') {
+                document.getElementById('ocultar1').style.display = 'block';
+            } else document.getElementById('ocultar1').style.display = 'none';      
+        }
+
+        function mostrar2() {
+            if (document.getElementById('ocultar2').style.display === 'none') {
+                document.getElementById('ocultar2').style.display = 'block';
+            } else document.getElementById('ocultar2').style.display = 'none';      
+        }
+
+        function mostrar3() {
+            if (document.getElementById('ocultar3').style.display === 'none') {
+                document.getElementById('ocultar3').style.display = 'block';
+            } else document.getElementById('ocultar3').style.display = 'none';      
+        }
+
+    </script>    
+</body>
+</html>
